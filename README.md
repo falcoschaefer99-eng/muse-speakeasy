@@ -37,7 +37,7 @@ SpeakEasy turns any text field into a microphone. Press one key, speak naturally
 bash install-mac.sh
 ```
 
-The installer sets up everything: Python dependencies, Hammerspoon configuration, and Caps Lock remapping. Reboot once after install.
+Sets up Python, Hammerspoon, and Caps Lock. Reboot once.
 
 ### Windows
 
@@ -57,9 +57,9 @@ See the full [Setup Guide](SETUP_GUIDE.md) for manual installation, troubleshoot
 1. **Press Caps Lock** — starts recording from your microphone
 2. **Speak naturally** — pauses don't cut you off. It waits until you're done
 3. **Press Caps Lock again** (or wait for silence) — transcription happens locally via Whisper
-4. **Text appears** wherever your cursor is — terminal, editor, browser, chat, anywhere
+4. **Text appears** wherever your cursor is
 
-Press **Escape** at any time to cancel without transcribing.
+**Escape** cancels without transcribing.
 
 ## Configuration
 
