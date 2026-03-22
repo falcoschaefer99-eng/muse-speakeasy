@@ -18,7 +18,7 @@
 
 ## What Is This?
 
-SpeakEasy turns any text field into a microphone. Press one key, speak naturally, and your words appear — terminal, editor, browser, chat, anywhere. Nothing ever leaves your machine.
+Press one key, speak naturally, and your words appear — terminal, editor, browser, chat, anywhere.
 
 ## Features
 
@@ -46,11 +46,11 @@ Sets up Python, Hammerspoon, and Caps Lock. Reboot once.
 .\install-windows.ps1
 ```
 
-Installs dependencies, configures AutoHotkey v2, and sets up the Caps Lock hotkey.
+Sets up AutoHotkey v2 and Caps Lock. Reboot once.
 
 ### Manual Setup
 
-See the full [Setup Guide](SETUP_GUIDE.md) for manual installation, troubleshooting, and configuration options.
+See the [Setup Guide](SETUP_GUIDE.md) for manual installation and troubleshooting.
 
 ## How It Works
 
