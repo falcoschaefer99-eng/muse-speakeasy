@@ -18,12 +18,12 @@
 
 ## What Is This?
 
-SpeakEasy turns any text field on your computer into a microphone. Press one key, speak naturally, and your words appear — terminal, editor, browser, chat, anywhere. Everything runs locally on your machine. Nothing ever leaves it.
+SpeakEasy turns any text field into a microphone. Press one key, speak naturally, and your words appear — terminal, editor, browser, chat, anywhere. Nothing ever leaves your machine.
 
 ## Features
 
 - **One-key voice input** — press to start, press again to stop. Escape to cancel
-- **Ramble-friendly** — talk for up to 5 minutes with smart silence detection
+- **Ramble-friendly** — talk for up to 5 minutes; pauses don't cut you off
 - **99 languages** — English, German, Spanish, Japanese, and 95+ more
 - **Mac + Windows** — full support for both platforms with one-click installers
 - **Zero background footprint** — does nothing until you press the key
@@ -55,7 +55,7 @@ See the full [Setup Guide](SETUP_GUIDE.md) for manual installation, troubleshoot
 ## How It Works
 
 1. **Press Caps Lock** — starts recording from your microphone
-2. **Speak naturally** — smart silence detection knows when you're thinking vs. when you're done
+2. **Speak naturally** — pauses don't cut you off. It waits until you're done
 3. **Press Caps Lock again** (or wait for silence) — transcription happens locally via Whisper
 4. **Text appears** wherever your cursor is — terminal, editor, browser, chat, anywhere
 
@@ -75,7 +75,7 @@ Set these environment variables to customize behavior:
 
 ## Privacy
 
-100% local and private. All transcription happens on your machine using OpenAI's Whisper model — no cloud, no subscription, no account. The only network call is a one-time model download (~74MB) on first use.
+Fully local. All transcription happens on your machine using OpenAI's Whisper model — no cloud, no subscription, no account. The only network call is a one-time model download (~74MB) on first use.
 
 ## Requirements
 
