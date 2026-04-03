@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <em>Press one key. Speak. Your words appear wherever you type.</em>
+  <img src="https://readme-typing-svg.demolab.com?font=Montserrat&weight=500&size=22&pause=1200&color=D4AF37&center=true&vCenter=true&width=980&lines=Press+one+key.+Speak.+Keep+typing.;Local+Whisper+dictation+for+any+app.;Your+words+appear+wherever+you+type." alt="MUSE SpeakEasy tagline" />
 </p>
 
 <p align="center">
