@@ -57,7 +57,10 @@ echo -e "${GREEN}Found Python:${NC} $($PYTHON --version)"
 echo ""
 echo "Installing Python dependencies..."
 $PYTHON -m pip install --upgrade pip --quiet
-$PYTHON -m pip install numpy sounddevice openai-whisper --quiet
+$PYTHON -m pip install \
+    -r "$SPEAKEASY_DIR/requirements.txt" \
+    --require-hashes \
+    --quiet
 echo -e "${GREEN}Dependencies installed.${NC}"
 
 # --- Check Hammerspoon ---

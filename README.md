@@ -84,6 +84,19 @@ Fully local. All transcription happens on your machine using OpenAI's Whisper mo
 - macOS: [Hammerspoon](https://www.hammerspoon.org/) (installed automatically)
 - Windows: [AutoHotkey v2](https://www.autohotkey.com/) (installed automatically)
 
+## Supply Chain Security
+
+All Python dependencies are hash-pinned in `requirements.txt` (direct + transitive). The installers use `pip install --require-hashes`, which means pip verifies every package against its SHA-256 hash before unpacking it. A tampered package — even one with a matching version number — will cause the install to fail rather than silently execute malicious code. pip itself is hash-pinned in `requirements.txt`, so the bootstrap upgrade step is covered by the same verification.
+
+If install fails with a hash mismatch, do not retry — this is a security signal. Verify your internet connection or file integrity, then re-download.
+
+To regenerate hashes after a dependency update (requires [pip-tools](https://pip-tools.readthedocs.io/)):
+
+```bash
+pip install pip-tools
+pip-compile --generate-hashes --allow-unsafe requirements.in
+```
+
 ## License
 
 Licensed under the [Apache License, Version 2.0](LICENSE.md).

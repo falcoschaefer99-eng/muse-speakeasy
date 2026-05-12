@@ -54,7 +54,10 @@ Write-Host "Found Python: $(& $Python --version)" -ForegroundColor Green
 Write-Host ""
 Write-Host "Installing Python dependencies..."
 & $Python -m pip install --upgrade pip --quiet 2>$null
-& $Python -m pip install numpy sounddevice openai-whisper --quiet
+& $Python -m pip install `
+    -r "$ScriptDir\requirements.txt" `
+    --require-hashes `
+    --quiet
 Write-Host "Dependencies installed." -ForegroundColor Green
 
 # --- Check AutoHotkey ---

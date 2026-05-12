@@ -1,0 +1,16 @@
+# Direct dependencies for MUSE SpeakEasy.
+# This is the SOURCE file. DO NOT pip install from this directly.
+#
+# To regenerate requirements.txt with updated hashes:
+#   pip install pip-tools
+#   pip-compile --generate-hashes --allow-unsafe requirements.in
+#
+# IMPORTANT: Run pip-compile under Python 3.11+ (system 3.9 hits Cython
+# resolution failures on the locked numpy version). On macOS that means
+# Homebrew's pip-compile: /opt/homebrew/bin/pip-compile
+#
+# Installers use the compiled requirements.txt with --require-hashes.
+pip
+numpy
+sounddevice
+openai-whisper
